@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b001a614c1aa68438c6565f81b51548, type: 3}
+  m_Name: S_MachineGun_Gun
+  m_EditorClassIdentifier: 
+  Type: 1
+  Name: MachineGun
+  ModelPrefab: {fileID: 5801308059268663031, guid: f78650fc1046b5b4e82c8baabb521ff7,
+    type: 3}
+  SpawnPoint: {x: 0.33, y: -0.4, z: 0.55}
+  SpawnRotation: {x: -0.5, y: -2.36, z: 0}
+  ShootConfig: {fileID: 11400000, guid: aea0700791b7d7b42bc46f0c7e4df1bf, type: 2}
+  TrailConfig: {fileID: 11400000, guid: 2f891beb07d41a943917ad3e165e4866, type: 2}

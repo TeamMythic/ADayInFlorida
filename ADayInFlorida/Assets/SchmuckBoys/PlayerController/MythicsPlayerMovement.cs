@@ -33,6 +33,7 @@ public class MythicsPlayerMovement : MonoBehaviour
     private void HandleGrounded()
     {
 		isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
 		if (isGrounded && velocity.y < 0)
 		{//Fix for being grounded to smoothMore:
 			velocity.y = -2f;
@@ -48,7 +49,6 @@ public class MythicsPlayerMovement : MonoBehaviour
     {
 		if (Input.GetButtonDown("Jump") && isGrounded)
 		{//V = sqrt(h * -2 * g):
-
 			velocity.y = Mathf.Sqrt((jumpHeight) * -2 * (gravity * gravityMagnitude));
 		}
 	}
@@ -65,6 +65,7 @@ public class MythicsPlayerMovement : MonoBehaviour
     {
 		float x = Input.GetAxis("Horizontal");
 		float z = Input.GetAxis("Vertical");
+        Vector3 moveTemp = transform.right;
 		Vector3 move = transform.right * x + transform.forward * z;
 		playersCharacterController.Move(move * speed * Time.deltaTime);
 	}
